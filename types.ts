@@ -1,4 +1,5 @@
 
+
 export enum TankStatus {
   NORMAL = 'Normal',
   LOW = 'Baixo',
@@ -78,6 +79,8 @@ export interface AppNotification {
     capacity: number;
     temperature: number;
     previousLevel?: number;
+    previousTimestamp?: string;
+    currentTimestamp?: string;
   };
 }
 
